@@ -32,7 +32,6 @@ function App() {
       {selectedProject && (
         <>
           <TaskList projectId={selectedProject.id} />
-          {/* <NewTaskForm projectId={selectedProject.id} onTaskAdded={() => {}} /> */}
           <NewTaskForm projectId={selectedProject.id} onTaskAdded={loadProjects} />
         </>
       )}
